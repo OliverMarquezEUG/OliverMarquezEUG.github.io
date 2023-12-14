@@ -1,0 +1,74 @@
+body {
+  background-color: #f8f8f8;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+#nuevaTareaInput,
+#filtrarInput {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#añadirBtn {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #27a037;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#añadirBtn:hover {
+  background-color: #3f9a1b;
+}
+
+#listaTareas {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task {
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-text {
+  margin-left: 10px;
+  flex-grow: 1;
+}
+
+.delete {
+  background-color: #e53935;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.delete:hover {
+  background-color: #c62828;
+}
+
+.hidden {
+  display: none;
+}
+
+.finalizar:checked + .task-text {
+  text-decoration: line-through;
+  color: #ccc;
+}
